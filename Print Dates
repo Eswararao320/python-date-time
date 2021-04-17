@@ -1,0 +1,10 @@
+from datetime import datetime,timedelta
+add_and_subtract_days=timedelta(days=1,hours=0)
+date_string=input()
+date=datetime.strptime(date_string,"%d %b %Y")
+print(date-add_and_subtract_days)
+print(date)
+print(date+add_and_subtract_days)
+
+
+input; 20 jan 2020
