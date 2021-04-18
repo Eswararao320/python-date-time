@@ -1,0 +1,14 @@
+from datetime import datetime,timedelta
+start_year,end_year=input().split()
+start_day=datetime.strptime(start_year,"%Y")
+end_day=datetime.strptime(end_year,"%Y")
+end_day=end_day+timedelta(days=365)
+number_of_days=(end_day-start_day).days
+count_mondays=0
+for i in range(number_of_days):
+    day=start_day+timedelta(days=i)
+    if day.strftime("%A")=="Monday" and day.strftime("%d")== "01":
+        count_mondays=count_mondays+1
+print(count_mondays)
+    
+    
