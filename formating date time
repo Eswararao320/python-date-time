@@ -1,0 +1,7 @@
+from datetime import datetime 
+date_string=input()
+date=datetime.strptime(date_string,"%b %d %Y %I:%M%p")
+out_put=datetime.strftime(date,"%d/%m/%Y %H:%M:%S")
+print(out_put)
+
+input:Jul 01 2014 02:43PM
