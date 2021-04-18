@@ -11,4 +11,17 @@ for i in range(number_of_days):
         count_mondays=count_mondays+1
 print(count_mondays)
     
-    
+    ------------------OR------------------
+ input:2015 2017   
+ 
+from datetime import datetime
+year_a,year_b=input().split()
+months=range(1,13)
+years=range(int(year_a),int(year_b)+1)
+count_mondays=0
+for year in years:
+    for month in months:
+        date_object=datetime(year,month,1)
+        if date_object.strftime("%A")=="Monday":
+            count_mondays=count_mondays+1
+print(count_mondays)    
