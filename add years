@@ -1,0 +1,9 @@
+from datetime import datetime,timedelta
+date_string=input()
+year=int(input())
+add_year=timedelta(days=365*year)
+date=datetime.strptime(date_string,"%b %d %Y")
+print(date+add_year)
+
+input:Jul 11 2014
+      
