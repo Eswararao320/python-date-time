@@ -1,0 +1,14 @@
+
+def converting_int(a):
+    a=int(a)
+    return a
+a,b=input().split()
+try:
+    a=converting_int(a)
+    b=converting_int(b)
+    print(a/b)
+except ZeroDivisionError:
+    print("Denominator can't be 0")
+except ValueError:
+    print("Input should be an integer")
+
