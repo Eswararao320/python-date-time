@@ -1,0 +1,12 @@
+from datetime import datetime,timedelta
+start_date=input()
+end_date=input()
+start_date=datetime.strptime(start_date,"%b %d %Y")
+end_date=datetime.strptime(end_date,"%b %d %Y")
+num_of_days=(end_date-start_date)
+num_of_days=num_of_days.days
+for i in range(num_of_days+1):
+    print(start_date+timedelta(days=i))
+    
+input:Jul 11 2014
+      Jul 19 2014
