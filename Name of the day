@@ -1,0 +1,8 @@
+from datetime import datetime
+date_string=input()
+date=datetime.strptime(date_string,"%d %b %Y")
+name_of_day=date.strftime("%A")
+print(name_of_day)
+
+
+input:7 Sept 2020
